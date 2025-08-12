@@ -1,0 +1,6 @@
+Filename: response_a.py
+Runs successfully: No
+Error: ValueError - Dimensions must be equal error during KL divergence calculation due to mismatched tensor shapes [60000,10] vs [32,10].
+Correctness: Partial
+Notes: Error in loss function where teacher logits shape does not match batch size of student predictions. Needs fix in how teacher logits are passed or batched during training.
+
